@@ -1,6 +1,5 @@
 from musicpy import C, play
 
-# melody
 guitar = (
     C("C", 3, 1 / 4, 1 / 8) * 2
     | C("C", 3, 1 / 4)
