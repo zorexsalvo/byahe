@@ -2,6 +2,29 @@
 Hello Everyone
 
 I am Zorex from Python Philippines.
-First off I would like to congratulate the organizers for holding the PyCon this year in-person and happy 11th anniversary as well
 
-I'm here to quickly talk about music and python and a bit of Taiwan and Philippine Culture
+- First off I would like to congratulate the organizers for holding the PyCon this year in-person and happy 11th anniversary as well
+
+- I'm here to talk about Music and a bit of the Taiwan and Philippine Culture, and how am I going to do that? using Python!
+
+
+Disclaimer: I am no musician so I don't know about music theories and stuff, I only do this as a hobby.
+
+
+but how?
+`pip install musicpy`
+
+
+I found a package that do what I want, play music and it is easy to dive into. I literally started playing with it last night when I'm cold, and alone in my hotel room last night.
+
+This is how to use it:
+
+`
+from musicpy import C
+`
+
+C is a chord object that has this keyword arguments
+C()
+- chord name 
+- octave
+- duration

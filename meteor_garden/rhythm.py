@@ -8,8 +8,10 @@ from musicpy import C, play
 # The function uses the `play` function from the musicpy library to play the rhythm.
 # The `bpm` parameter is set to 90 and the `instrument` parameter is set to 25.
 
+# chord = C("C").play()
+
 guitar = (
-    C("C", 3, 1 / 4, 1 / 8) * 2
+    C("C", 3, 1 / 4, 1 / 8) * 2 # chord name, octave, duration, delay
     | C("C", 3, 1 / 4)
     | C("G", 2, 1 / 4, 1 / 8) * 2
     | C("G", 2, 1 / 4)

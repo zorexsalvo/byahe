@@ -1,4 +1,4 @@
-from musicpy import C, play, piece, chord, drum
+from musicpy import C, play, piece, drum
 
 
 # K = Kick
