@@ -28,3 +28,8 @@ C()
 - chord name 
 - octave
 - duration
+
+
+
+This is an informal invitation. We will be having PyCon Philippines 2024 sometime in February next year, if you want to visit the Philippines, you are welcome to join us.
+

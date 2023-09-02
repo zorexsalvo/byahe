@@ -1,5 +1,6 @@
 from musicpy import C, play
 
+chord = C("C").play()
 # Plays a guitar rhythm using the musicpy library.
 
 # The rhythm consists of the following chords:
@@ -8,7 +9,6 @@ from musicpy import C, play
 # The function uses the `play` function from the musicpy library to play the rhythm.
 # The `bpm` parameter is set to 90 and the `instrument` parameter is set to 25.
 
-# chord = C("C").play()
 
 guitar = (
     C("C", 3, 1 / 4, 1 / 8) * 2 # chord name, octave, duration, delay
@@ -29,4 +29,4 @@ guitar = (
     | C("G", 2, 1 / 4)
 ) * 1
 
-play(guitar, bpm=100, instrument=25)
+play(guitar, bpm=150, instrument=25)
