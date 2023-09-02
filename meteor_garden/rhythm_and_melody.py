@@ -17,7 +17,7 @@ intro = (
 verse = (
     C("C", 3, 1 / 4, 1 / 8) * 2
     | C("C", 3, 1 / 4)
-    | C("G", 2, 1 / 4, 1 / 8) * 1
+    | C("G", 2, 1 / 4, 1 / 8) * 2
     | C("G", 2, 1 / 4)
     | C("Am", 2, 1 / 4, 1 / 8) * 2
     | C("Am", 2, 1 / 4)
@@ -39,10 +39,10 @@ string1 = chord(
 )
 
 result = piece(
-    [intro | verse * 1, string1],
-    [2, 34, 49, 31, 1],
-    bpm=105,
-    start_times=[0, 0],
-    channels=[0, 1],
+    [intro | verse * 1, string1], # tracks
+    [25, 49], # instruments
+    bpm=105, # bpm
+    start_times=[0, 0], # start times
+    channels=[0, 1], # channels
 )
 play(result)

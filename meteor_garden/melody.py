@@ -7,7 +7,7 @@ string1 = chord(
 
 result = piece(
     [string1],
-    [2, 34, 49, 31, 1],
+    [41],
     bpm=180,
     start_times=[0, 0],
     channels=[0, 1],
