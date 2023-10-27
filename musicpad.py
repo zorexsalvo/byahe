@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.containers import Grid
+from textual.containers import Grid, Horizontal
 from textual.widgets import Header, Footer
 from textual.widgets import Button
 from musicpy import *
@@ -9,13 +9,7 @@ class MusicPad(App):
     """A Textual app to manage stopwatches."""
 
     BINDINGS = [("d", "toggle_dark", "Toggle dark mode")]
-    CHORDS_MAPPING = {
-        "C": ("C", 3),
-        "G": ("G", 2),
-        "Am": ("Am", 2),
-        "Em": ("Em", 2),
-        "F": ("F", 2),
-    }
+    CSS_PATH = "musicpad.tcss"
 
     def on_button_pressed(self, event: Button.Pressed) -> None:
         # args = self.CHORDS_MAPPING[event.button.id]
