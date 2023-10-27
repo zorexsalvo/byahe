@@ -18,7 +18,7 @@ class MusicPad(App):
         if event.button.id.startswith("chord-"):
             chord = str(event.button.id).replace("chord-", "")
             chord = C(chord, *default_args) * 2
-            play(chord, bpm=100, instrument=25)
+            play(chord, bpm=90, instrument=25)
 
         if event.button.id == "drumbeat":
             drum1 = drum("K, H, S, H, r:2, K, H, S, H, r:2")
@@ -52,7 +52,7 @@ class MusicPad(App):
             )
 
 
-            drum1 = drum("K, H, S, H, r:2, K, H, S, H, r:2").notes * 8
+            drum1 = drum("K, H, S, H, r:2, K, H, S, H, r:2").notes * 7
             drum1.set_volume(112)
 
             result = piece(
