@@ -29,6 +29,41 @@ class MusicPad(App):
             beat = drum(beat)
             play(beat, instrument=1)
 
+        if event.button.id == "wholesong":
+            chorus = (
+                C("F", 2, 1 / 4, 1 / 8) * 2
+                | C("F", 3, 1 / 4)
+                | C("C", 2, 1 / 4, 1 / 8) * 2
+                | C("C", 2, 1 / 4)
+                | C("Dm", 2, 1 / 4, 1 / 8) * 2
+                | C("Dm", 2, 1 / 4)
+                | C("C", 2, 1 / 4, 1 / 8) * 2
+                | C("C", 2, 1 / 4)
+                | C("Bb", 2, 1 / 4, 1 / 8) * 2
+                | C("Bb", 2, 1 / 4)
+                | C("C", 2, 1 / 4, 1 / 8) * 2
+                | C("C", 2, 1 / 4)
+            ) * 2
+
+            chorus = (
+                chorus | 
+                C("F", 2, 1 / 4, 1 / 8) * 2
+                | C("F", 3, 1 / 4)
+            )
+
+
+            drum1 = drum("K, H, S, H, r:2, K, H, S, H, r:2").notes * 8
+            drum1.set_volume(112)
+
+            result = piece(
+                [chorus, drum1] ,
+                [25, 1],
+                bpm=120,
+                start_times=[0, 0],
+                channels=[0, 9],
+            )
+            play(result)
+
 
     def compose(self) -> ComposeResult:
         """Create child widgets for the app."""
@@ -45,6 +80,7 @@ class MusicPad(App):
             Button("Open Hi-hat", id="drums-OH", variant="success"),
             Button("Pedal Hi-hat", id="drums-PH", variant="success"),
             Button("Drums", id="drumbeat", variant="success"),
+            Button("Play", id="wholesong", variant="success")
         )
         yield Footer()
 
