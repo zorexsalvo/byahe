@@ -1,0 +1,11 @@
+Grid {
+    grid-size: 2 2;
+    grid-gutter: 5;
+}
+
+Button {
+    border: round white;
+    content-align: center middle;
+    width: 100%;
+    height: 100%;
+}

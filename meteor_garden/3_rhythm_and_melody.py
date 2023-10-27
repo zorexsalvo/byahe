@@ -1,5 +1,8 @@
 from musicpy import C, play, piece, chord
 
+
+# PIECE
+
 intro = (
     C("C", 3, 1 / 4, 1 / 8) * 2
     | C("C", 3, 1 / 4)
