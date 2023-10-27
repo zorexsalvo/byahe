@@ -58,7 +58,7 @@ class MusicPad(App):
             result = piece(
                 [chorus, drum1] ,
                 [25, 1],
-                bpm=120,
+                bpm=90,
                 start_times=[0, 0],
                 channels=[0, 9],
             )
